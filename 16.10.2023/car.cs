@@ -1,10 +1,10 @@
 ﻿public class car
 {
-    public string Model;
-    public int topspeed;
-    public double engine;
-    public double km;
-    public int hp;
+    private string Model;
+    private int topspeed;
+    private double engine;
+    private double km;
+    private int hp;
 
     public string model
     {
