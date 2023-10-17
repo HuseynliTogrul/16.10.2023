@@ -1,16 +1,16 @@
 ﻿public class car
 {
-    private string Model;
-    private int topspeed;
-    private double engine;
-    private double km;
-    private int hp;
+    private string _model;
+    private int _topspeed;
+    private double _engine;
+    private double _km;
+    private int _hp;
 
     public string model
     {
         get
         {
-            return Model;
+            return _model;
         }
         set
         {
@@ -20,7 +20,7 @@
             }
             else
             {
-                Model = value;
+                _model = value;
             }
         } 
     }
@@ -29,13 +29,13 @@
     {  
        get
        { 
-            return topspeed;
+            return _topspeed;
        }
        set 
        {
             if (value >= 10 && value <= 1000)
             {
-                topspeed = value;
+                _topspeed = value;
             }
             else
             {
@@ -48,13 +48,13 @@
     { 
         get 
         { 
-            return engine; 
+            return _engine; 
         } 
         set
         {
             if (value >= 0.3 && value <= 10)
             {
-                engine = value;
+                _engine = value;
             }
             else
             {
@@ -67,13 +67,13 @@
     {
         get
         {
-            return km;
+            return _km;
         }
         set
         {
             if (value > 0)
             {
-                km = value;
+                _km = value;
             }
             else
             {
@@ -86,13 +86,13 @@
     {
         get
         {
-            return hp;
+            return _hp;
         }
         set
         {
             if (value >= 50 && value <= 1000)
             {
-                hp = value;
+                _hp = value;
             }
             else
             {
